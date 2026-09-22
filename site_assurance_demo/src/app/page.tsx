@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <>
       <div>
-        <StackedBarChart />
+        {/* <StackedBarChart /> */}
+        Home Page
       </div>
     </>
   );
