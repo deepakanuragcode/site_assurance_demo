@@ -1,11 +1,11 @@
-
+import StackedBarChart from "./components/charts/stackedBarChart/stackedBarChart";
 
 export default function Home() {
   return (
     <>
-    <div>
-      <h1>Hello World</h1>
-    </div>
+      <div>
+        <StackedBarChart />
+      </div>
     </>
   );
 }
