@@ -24,6 +24,17 @@ export const ProductDescription = styled.p`
   font-size: 14px;
   color: #555;
   margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+`;
+
+export const ProductListWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px;
 `;
 
 export const ProductButton = styled.button`

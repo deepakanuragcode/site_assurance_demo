@@ -1,13 +1,14 @@
-"use client";
 import Link from "next/link";
-import ProductCard from "../components/commonComponents/productCards/productCard";
+import { ProductList } from "../components/commonComponents/productCards/productCard";
+import { getProducts } from "../../services/products";
 
-const ProductPage = () => {
+const ProductPage = async () => {
+  const products = await getProducts();
+
   return (
     <div>
-      <Link href="/">
-        <ProductCard />
-      </Link>
+      <Link href="/">Navigate to Home</Link>
+      <ProductList products={products} />
     </div>
   );
 };
